@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.RequiredArgsConstructor;
 import io.davidarchanjo.code.model.Book;
 import io.davidarchanjo.code.repositories.BookRepository;
+import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -21,8 +21,7 @@ public class BookController {
 	
 	@GetMapping
 	public Flux<Book> findAllBooks() {
-		Flux<Book> body = bookRepository.findAll();
-		return body;
+		return bookRepository.findAll();
 	}
 
 	@PostMapping

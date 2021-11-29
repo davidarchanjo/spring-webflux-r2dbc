@@ -25,7 +25,7 @@ public class PersonController {
 		return personRepository.findAll();
 	}
 	
-	@GetMapping("/summary")
+	@GetMapping("summary")
 	public Flux<PersonSummary> findAllSummary() {
 		return personRepository.findAllSummary();
 	}
