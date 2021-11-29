@@ -1,10 +1,19 @@
 # Spring Boot WebFlux R2DBC Application
 ![banner](./assets/banner.jpg)
 
-# Running Postgres from Docker
-```bash
-$ docker run --rm -p 5432:5432 -e POSTGRES_PASSWORD=admin postgres:13.1-alpine -d postgres
-```
+# Booting Up
+<ol>
+<li>Launch Postgres from Docker:</li>
+  <code>docker run --rm -p 5432:5432 -e POSTGRES_PASSWORD=admin postgres:13.1-alpine -d postgres</code>
+<li>Clone the repository:</li>
+  <code>git clone https://github.com/davidarchanjo/spring-boot-r2dbc</code>
+<li>Navigate to the folder:</li>
+  <code>cd spring-boot-r2dbc</code>
+<li>Install dependencies and build the application:</li>
+  <code>mvn clean install</code>
+<li>Run the application:</li>
+  <code>java -jar target/spring-boot-r2dbc-1.0.0.jar</code>
+</ol>
 
 # Testing
 - Create New Author </br>
