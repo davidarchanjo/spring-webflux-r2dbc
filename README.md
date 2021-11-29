@@ -33,3 +33,6 @@
         "dateOfParution": "2021-11-28"
     }
     ```
+
+# Reference
+Inspired by this [project](https://www.sipios.com/blog-tech/handle-the-new-r2dbc-specification-in-java).
